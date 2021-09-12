@@ -25,13 +25,13 @@ h2 {
   font-size: xx-large;
 }
 .qwerty {
-  background-color: aqua;
+  background-color: rgba(0, 247, 164, 0.637);
   font-size: 1em;
   font-weight: bold;
   padding: 15px;
   border-radius: 5px;
   opacity: 0.8;
-
+  margin-top: 1%;
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
