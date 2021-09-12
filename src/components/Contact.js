@@ -9,7 +9,7 @@ function Contact() {
         <h3>
           Name: Anurag Jaiswal <br />
           Phone Number: 8697480031 <br />
-          Email: anuajaiswal9087@gmail.com <br />
+          Email: anujaiswal9087@gmail.com <br />
         </h3>
       </center>
     </div>
