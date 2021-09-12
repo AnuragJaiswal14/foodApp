@@ -7,21 +7,21 @@ function Checkout() {
   const [{ basket, user }, dispatch] = useStateValue();
   return (
     <div className="flex">
-      <div className="items">
-        <center>
-          {basket.map((item) => (
-            <CheckoutProduct
-              id={item.id}
-              title={item.title}
-              image={item.image}
-              price={item.price}
-              rating={item.rating}
-            />
-          ))}
-        </center>
-      </div>
       <div className="total-payable">
-        <h1>Total Amount Payable is: ${getBasketTotal(basket)}</h1>
+        <h2 className="qwerty">
+          Total Amount Payable is: ${getBasketTotal(basket)}
+        </h2>
+      </div>
+      <div className="items">
+        {basket.map((item) => (
+          <CheckoutProduct
+            id={item.id}
+            title={item.title}
+            image={item.image}
+            price={item.price}
+            rating={item.rating}
+          />
+        ))}
       </div>
     </div>
   );

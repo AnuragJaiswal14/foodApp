@@ -11,7 +11,7 @@ function CheckoutProduct({ id, title, image, price, rating, hidebutton }) {
     });
   };
   return (
-    <div className="checkoutProduct">
+    <div className="checkoutProduct hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t">
       <img className="checkoutProduct__image" src={image} />
       <div className="checkoutProduct__info">
         <p className="checkoutProduct__title">{title}</p>
@@ -27,7 +27,9 @@ function CheckoutProduct({ id, title, image, price, rating, hidebutton }) {
             ))}
         </div>
         {!hidebutton && (
-          <button onClick={removeFromBasket}>Remove From Basket</button>
+          <button className="checkoutProduct__rem" onClick={removeFromBasket}>
+            Remove From Basket
+          </button>
         )}
       </div>
     </div>

@@ -18,16 +18,14 @@ function Card({ image, label }) {
     });
   };
   return (
-    <div className="flex py-7 px-2 pr-4 border-b cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t">
+    <div className="flex1 py-7 px-2 pr-4 border-b cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-200 ease-out first:border-t">
       <div className="relative h-24 w-40 md:h-52 md:w-80 flex-shrink-0 ">
         <img src={image} className="rounded-2xl" alt="" />
       </div>
 
       <h4 className="text-xl">{label}</h4>
       <div className="border-b w-10 pt-2" />
-      <div className="flex justify-between items-end pt-5">
-        <p className="flex items-center "></p>
-
+      <div className="flex1 justify-between items-end pt-5">
         <div className="product__rating">
           {Array(4)
             .fill()
@@ -36,7 +34,7 @@ function Card({ image, label }) {
             ))}
         </div>
         <div>
-          <p className=" t text-right- font-extralight"> $100.22</p>
+          <p className="product__price">$100.22</p>
           <button className="addtocart " onClick={addToBasket}>
             Add To Basket
           </button>

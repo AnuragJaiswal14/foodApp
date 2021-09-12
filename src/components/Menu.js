@@ -30,21 +30,19 @@ function Menu() {
         className="text-center"
         onClick={getData}
         style={{ paddingTop: "0%" }}
-      >
-        MENU
-      </h1>
-
-      <form className="search-form" onSubmit={onSubmit}>
-        <input
-          type="text"
-          placeholder="Search food item"
-          autocomplete="off"
-          onChange={onChange}
-          value={query}
-        />
-        <input type="submit" value="search" />
-      </form>
-
+      ></h1>
+      <center>
+        <form className="search-form" onSubmit={onSubmit}>
+          <input
+            type="text"
+            placeholder="Search food item"
+            autocomplete="off"
+            onChange={onChange}
+            value={query}
+          />
+          <input type="submit" value="search" />
+        </form>
+      </center>
       <div className="recipes">
         {recipes !== [] &&
           recipes.map((recipe) => <Recipe key={uuidv4()} recipe={recipe} />)}

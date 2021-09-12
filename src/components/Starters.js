@@ -10,11 +10,11 @@ import six from "./images/six.jpg";
 function Starters() {
   return (
     <div>
-      <Card image={one} title="Italiano pesto" />
-      <Card image={two} title="Chicken Wings" />
-      <Card image={three} title="Chicken Momo" />
-      <Card image={four} title="Biriyani" />
-      <Card image={six} title="Chowmein" />
+      <Card image={one} label="Italiano pesto" />
+      <Card image={two} label="Chicken Wings" />
+      <Card image={three} label="Chicken Momo" />
+      <Card image={four} label="Biriyani" />
+      <Card image={six} label="Chowmein" />
     </div>
   );
 }
